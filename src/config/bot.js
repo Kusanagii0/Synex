@@ -23,10 +23,10 @@ export const botConfig = {
     // 5 = Competing
     activities: [
       {
-        // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        // Text users will see (example: "Playing /help | Synex").
+        name: "Made with ❤️ Kusanagi",
         // Activity type number (0 = Playing).
-        type: 0,
+        type: 5,
       },
     ],
   },
@@ -37,7 +37,7 @@ export const botConfig = {
   commands: {
     // Bot owner user IDs (comma-separated in OWNER_IDS env var).
     // Owners can access owner/admin-level bot commands.
-    owners: process.env.OWNER_IDS?.split(",") || [],
+    owners: process.env.OWNER_IDS?.split("1168152082566623302,") || [],
 
     // Default wait time between command uses (in seconds).
     defaultCooldown: 3,
@@ -139,7 +139,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Synex",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -147,7 +147,7 @@ export const botConfig = {
     thumbnail: null,
     author: {
       // Optional default embed author block.
-      name: null,
+      name: Kusanagi,
       icon: null,
       url: null,
     },
@@ -159,15 +159,15 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "KusaCoin",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "KusaCoin",
       // Currency symbol shown in balances.
       symbol: "$",
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 100,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 100000,
